@@ -17,9 +17,51 @@ img {
     max-width: 100%;
 }
 
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerRegular'),
+	url("../fonts/MullerRegular.woff2") format('woff2'),
+	url('../fonts/MullerRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerBold'),
+	url("../fonts/MullerBold.woff2") format('woff2'),
+	url('../fonts/MullerBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerLight'),
+	url("../fonts/MullerLight.woff2") format('woff2'),
+	url('../fonts/MullerLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerMedium'),
+	url("../fonts/MullerMedium.woff2") format('woff2'),
+	url('../fonts/MullerMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
     min-width: 1200px;
-    font-family: 'font', sans-serif;
+    font-family: 'Muller', sans-serif;
+    font-weight: 400;
+    background-color: #E5E5E5;
 }
 
 /* glob */
@@ -39,9 +81,13 @@ ul {
 
 .btn {
     padding: 13px 20px;
-    border: none;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
 }
 
 .flex {
@@ -49,19 +95,23 @@ ul {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 
 .section-title {
     margin: 0 0 20px;
     padding-left: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
 }
 
+
 .section-offset {
-    padding: 27px 45px;
+    margin-bottom: 70px;
 }
 
 /* header */
@@ -72,19 +122,44 @@ ul {
 
 .header-bottom {
     align-items: center;
+    padding: 14px 45px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
 
 .logo {
     margin-right: 40px;
+    font-size: 0;
 }
 
 .header-tel {
     margin-right: auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.header-login {
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url("../img/header-personal.svg");
 }
 
 .nav-item:not(:last-child) {
     margin-right: 45px;
 }
+
+.nav-item-link {
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+}
+
 
 .header-nav {
     margin-right: auto;
@@ -97,16 +172,27 @@ ul {
 /* specials */
 .specials-flex {
     flex-wrap: wrap;
+    gap: 24px;
 }
 
 .aside-item {
     width: 573px;
     padding: 40px 45px;
-    outline: 1px solid coral;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.aside-item:not(:nth-child(2n)) {
-    margin-right: 24px;
+.aside-item-1 {
+    background-image: url(../img/specials-1.jpg);
+}
+
+.aside-item-2 {
+    background-image: url(../img/specials-2.jpg);
+}
+
+.aside-item-big {
+    background-image: url(../img/specials-3.jpg);
 }
 
 .aside-item:not(:last-child) {
@@ -115,42 +201,148 @@ ul {
 
 .aside-caption {
     margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.aside-caption-big {
+    max-width: 300px;
+    padding-top: 182px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 .aside-descr {
     margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.aside-link {
+    padding-right: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #F0BF5F;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    background-image: url(../img/specials-arrow.svg);
 }
 
 /* about us */
 .about-us-descr {
     max-width: 888px;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
+
 
 /* services */
 .services-list {
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .services-item {
-    outline: 1px solid coral;
     width: 573px;
-    padding-bottom: 35px;
+    padding: 191px 45px 35px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    background-color: #FFF;
 }
 
-.services-item {
-    margin-bottom: 24px;
+.services-item:nth-child(1) {
+    background-image: url(../img/services-1.jpg);
+}
+
+.services-item:nth-child(2) {
+    background-image: url(../img/services-2.jpg);
+}
+
+.services-item:nth-child(3) {
+    background-image: url(../img/services-3.jpg);
+}
+
+.services-item:nth-child(4) {
+    background-image: url(../img/services-4.jpg);
+}
+
+.services-item-link {
+    padding-right: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(../img/services-arrow.svg);
+}
+
+.services-item-descr {
+    max-width: 402px;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
 
 /* benefits */
 .benefits-list {
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 22px;  
 }
 
 .benefits-item {
-    outline: 1px solid coral;
+    background: #FFFFFF;
+    border-radius: 15px;    
     width: 276px;
-    margin-bottom: 22px;
-    padding: 35px 42px;
+    padding: 40px 45px 32px;
+    background-repeat: no-repeat;
+    background-size: 67px 67px;
+    background-position-x: 45px;
+    background-position-y: 40px;
+}
+
+.benefits-item:nth-child(1) {
+    background-image: url(../img/benefits-1.svg);
+}
+
+.benefits-item:nth-child(2) {
+    background-image: url(../img/benefits-2.svg);
+}
+
+.benefits-item:nth-child(3) {
+    background-image: url(../img/benefits-3.svg);
+}
+
+.benefits-item:nth-child(4) {
+    background-image: url(../img/benefits-4.svg);
+}
+
+.benefits-item:nth-child(5) {
+    background-image: url(../img/benefits-5.svg);
+}
+
+.benefits-item:nth-child(6) {
+    background-image: url(../img/benefits-6.svg);
+}
+
+.benefits-item:nth-child(7) {
+    background-image: url(../img/benefits-7.svg);
+}
+
+.benefits-item:nth-child(8) {
+    background-image: url(../img/benefits-8.svg);
+}
+
+.benefits-item-descr {
+    margin-top: 77px;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
