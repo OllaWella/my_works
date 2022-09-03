@@ -346,3 +346,127 @@ ul {
     line-height: 200%;
     color: #000000;
 }
+
+/* accom */
+.accom-list {
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.accom-article {
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.accom-text {
+    padding: 32px 45px 45px;
+}
+
+.accom-price {
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.accom-price small {
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.accom-price strong {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.accom-caption {
+    margin-bottom: 16px;
+}
+
+.accom-place {
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.accom-item-last {
+    position: relative;
+    width: 374px;
+    background-image: url(../img/accom-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 27px;
+}
+/*  */
+.accom-item-last p {
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    background-image: url(../img/accom-last-item.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+
+.accom-last-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* tour */
+.tour-container {
+    background-color: #E9E9E9;
+    border-radius: 15px;
+    padding: 45px;
+}
+
+.tour-title {
+    margin-bottom: 20px;
+}
+
+.form-tour {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 32px 28px;
+}
+
+.form-text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-right: 41px;
+}
+
+.form-label input,
+.form-label select {
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+}
+
+.tour-btn {
+    margin-left: 51px;
+}
+
+.form-city,
+.form-country {
+    width: 169px;
+}
+
+.form-number {
+    width: 121px;
+}
+
+.tour-btn {
+    width: 108px;
+    padding: 13px 30px;
+}
