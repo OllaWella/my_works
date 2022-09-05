@@ -470,3 +470,153 @@ ul {
     width: 108px;
     padding: 13px 30px;
 }
+
+/* contacts */
+.container-contacts {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 45px;
+}
+
+.contacts-left {
+    flex-direction: column;
+    width: 375px;
+    margin-bottom: 45px;
+    margin-right: 68px;
+}
+
+.contacts-left-text {
+    min-width: 145px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contacts-left-1block,
+.contacts-left-2block,
+.contacts-left-3block,
+.contacts-left-4block {
+    padding-bottom: 23px;
+    padding-top: 25px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-left-1block {
+    padding-top: 0;
+}
+
+.contacts-address,
+.contacts-cshedule {
+    line-height: 150%;
+}
+
+.contacts-tel,
+.contacts-mail {
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.contacts-mail-descr {
+    line-height: 150%;
+    color: #999999;
+}
+
+.contacts-btn {
+    padding: 27px 29.5px;
+    min-width: 213px;
+}
+
+.contacts-right {
+    min-width: 653px;
+    min-height: 528px;
+    background-image: url(../img/contacts-back.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* footer */
+.footer {
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    background-color: #333333;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 45px;
+    background-image: url(../img/footer-back.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position-x: 738px;
+    background-size: 255px;
+}
+
+.footer-1block {
+    width: 427px;
+}
+
+.footer-copy,
+.footer-descr,
+.agreement {
+    max-width: 302px;
+}
+
+.footer-copy {
+    margin-bottom: 37px;
+}
+
+.footer-descr {
+    margin-bottom: 40px;
+}
+
+.agreement {
+    line-height: 150%;
+    color: #CC9933;
+}
+
+.footer-2block {
+    max-width: 370px;
+    margin-right: auto;
+}
+
+.footer-address {
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-phones {
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #CC9933;
+}
+
+.footer-mails {
+    line-height: 24px;
+    color: #CC9933;
+}
+
+.footer-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-link:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-link:nth-child(1) {
+    background-image: url(../img/footer-trip.svg);
+}
+
+.footer-link:nth-child(2) {
+    background-image: url(../img/footer-ok.svg);
+}
+
+.footer-link:nth-child(3) {
+    background-image: url(../img/footer-vk.svg);
+}
