@@ -90,6 +90,22 @@ ul {
     color: #CC9933;
 }
 
+.btn:focus {
+    color: #fff;
+    background-color: #CC9933;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #CC9933;
+}
+
+.btn:active {
+    color: #fff;
+    background-color: #A47312;
+    border-color: #A47312;
+}
+
 .flex {
     display: flex;
 }
@@ -140,14 +156,61 @@ ul {
     color: #666666;
 }
 
+.header-tel:focus {
+    color: #CC9933;
+    outline: 1px solid #CC9933;
+    outline-offset: 5px;
+}
+
+.header-tel:hover {
+    color: #CC9933;
+    outline: none;
+}
+
+.header-tel:active {
+    color: #A47312;
+    outline: none;
+}
+
+
 .header-login {
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
-    padding-left: 28px;
+}
+
+.header-login::before {
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+    left: 0;
+    width: 21px;
+    height: 12px;
+    background-image: url(../img/header-personal.svg);
     background-repeat: no-repeat;
-    background-position: left center;
-    background-image: url("../img/header-personal.svg");
+    background-size: cover;
+}
+
+.header-login:focus {
+    outline: 1px solid #CC9933;
+    outline-offset: 9px;
+}
+
+.header-login:hover::before {
+    background-image: url(../img/header-personal-2.svg);
+}
+
+.header-login:hover {
+    color: #F0BF5F;
+}
+
+.header-login:active::before {
+    background-image: url(../img/header-personal.svg);
+}
+
+.header-login:active {
+    color: #A47312;
+    outline: none;
 }
 
 .nav-item:not(:last-child) {
@@ -160,6 +223,20 @@ ul {
     color: #666666;
 }
 
+.nav-item-link:focus {
+    color: #CC9933;
+    outline: 1px solid #CC9933;
+    outline-offset: 5px;
+}
+
+.nav-item-link:hover {
+    color: #CC9933;
+    outline: none;
+}
+
+.nav-item-link:active {
+    color: #A47312;
+}
 
 .header-nav {
     margin-right: auto;
@@ -176,11 +253,28 @@ ul {
 }
 
 .aside-item {
+    position: relative;
     width: 573px;
     padding: 40px 45px;
     border-radius: 15px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    z-index: 1;
+}
+
+.aside-item.aside-item-1::before,
+.aside-item.aside-item-2::before {
+    z-index: -1;
+    position: absolute;
+    border-radius: inherit;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
 }
 
 .aside-item-1 {
@@ -198,6 +292,8 @@ ul {
 .aside-item:not(:last-child) {
     margin-bottom: 24px;
 }
+
+
 
 .aside-caption {
     margin-bottom: 15px;
@@ -233,6 +329,15 @@ ul {
     background-image: url(../img/specials-arrow.svg);
 }
 
+.aside-link:hover {
+    padding-right: 26px;
+}
+
+.aside-link:active {
+    padding-right: 15px;
+    color: #fff;
+}
+
 /* about us */
 .about-us-descr {
     max-width: 888px;
@@ -240,7 +345,6 @@ ul {
     line-height: 200%;
     color: #000000;
 }
-
 
 /* services */
 .services-list {
@@ -516,6 +620,24 @@ ul {
     color: #CC9933;
 }
 
+.contacts-tel:focus,
+.contacts-mail:focus {
+    outline: 1px solid #CC9933;
+    outline-offset: 5px;
+}
+
+.contacts-tel:hover,
+.contacts-mail:hover {
+    color: #F0BF5F;
+
+}
+
+.contacts-tel:active,
+.contacts-mail:active {
+    color: #A47312;
+    outline: none;
+}
+
 .contacts-mail-descr {
     line-height: 150%;
     color: #999999;
@@ -597,26 +719,45 @@ ul {
     color: #CC9933;
 }
 
+.footer-tel:focus,
+.footer-mail:focus,
+.agreement:focus {
+    outline: 1px solid #CC9933;
+    outline-offset: 5px;
+}
+
+.footer-tel:hover,
+.footer-mail:hover,
+.agreement:hover {
+    color: #F0BF5F;
+
+}
+
+.footer-tel:active,
+.footer-mail:active,
+.agreement:active {
+    color: #A47312;
+    outline: none;
+}
+
 .footer-link {
     display: block;
     width: 25px;
     height: 25px;
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.footer-link:focus [fill] {
+    fill: #CC9933;
+}
+
+.footer-link:hover [fill] {
+    fill: #CC9933;
+}
+
+.footer-link:active [fill] {
+    fill: #A47312;
 }
 
 .footer-link:not(:last-child) {
     margin-bottom: 20px;
-}
-
-.footer-link:nth-child(1) {
-    background-image: url(../img/footer-trip.svg);
-}
-
-.footer-link:nth-child(2) {
-    background-image: url(../img/footer-ok.svg);
-}
-
-.footer-link:nth-child(3) {
-    background-image: url(../img/footer-vk.svg);
 }
